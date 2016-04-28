@@ -3,10 +3,23 @@
 
     alias: 'viewmodel.person',
 
-    stores: {
-        viewModelPerson: {
-            model: 'TrainingWeb.model.PersonModel'
-        }
-    }
+    //requires: ['TrainingWeb.model.PersonGlobalModel'],
+
+    data: {
+        myTitle: 'Bound Title'
+    }//,
+        
+    //stores: {
+    //    personlist: {
+    //        model: 'TrainingWeb.model.PersonGlobalModel',
+    //        autoLoad: true,
+    //        proxy: {
+    //            type: 'memory',
+    //            reader: {
+    //                type: 'json'
+    //            }
+    //        }
+    //    }
+    //}
 });
 

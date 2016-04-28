@@ -1,17 +1,23 @@
 ﻿Ext.define('TrainingWeb.store.PersonStore', {
     extend: 'Ext.data.Store',
 
-    model: 'TrainingWeb.model.PersonModel',
-    alias: 'store.personStore',
-    autoLoad: true,
+    //requires: 'TrainingWeb.model.PersonGlobalModel',//
+
+    model: 'TrainingWeb.model.PersonGlobalModel',
+    //alias: 'store.personStore',
+    storeId: 'personstore',
+    //autoLoad: true,
     proxy: {
-        type: 'memory'
+        type: 'memory',
+        //reader: {
+        //    type: 'json'
+        //}
     },
 
     data: [
-        {personId: 1, firstName: 'Whois', lastName: 'That', email: 'blah@gmail.com', phone: '1234567890'},
-        {personId: 2, firstName: 'Me', lastName: 'Myself', email: 'blah@gmail.com', phone: '1234567890'},
-        {personId: 3, firstName: 'That', lastName: 'Guy', email: 'blah@gmail.com', phone: '1234567890'},
-        {personId: 4, firstName: 'John', lastName: 'Smith', email: 'blah@gmail.com', phone: '1234567890'}
+        {firstName: 'Whois', lastName: 'That', email: 'blah@gmail.com', phone: '1234567890'},
+        {firstName: 'Me', lastName: 'Myself', email: 'blah@gmail.com', phone: '1234567890'},
+        {firstName: 'That', lastName: 'Guy', email: 'blah@gmail.com', phone: '1234567890'},
+        {firstName: 'John', lastName: 'Smith', email: 'blah@gmail.com', phone: '1234567890'}
         ]
 });

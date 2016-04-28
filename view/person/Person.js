@@ -5,30 +5,54 @@
 
     requires: [
         'TrainingWeb.view.person.PersonModel',
-        'TrainingWeb.view.person.PersonController',
+        'TrainingWeb.view.person.PersonController'//,
 
-        'TrainingWeb.store.PersonStore'
+        //'TrainingWeb.store.PersonStore'//,
+        //'TrainingWeb.model.PersonGlobalModel'
     ],
 
     controller: 'person',
     viewModel: 'person',
 
-    title: 'Personal Details',
+    //title: 'Personal Details',
 
-    defaultType: 'textfield',
+    //defaultType: 'textfield',
 
-    store: {
-        type: 'personStore'
-    },
+    // put into viewmodel, see email example
+    //store: {
+    //    type: 'personStore' 
+    //},
+
+    store: 'personstore',
 
     columns: [
         { text: 'First Name', dataIndex: 'firstName' },
         { text: 'Last Name', dataIndex: 'lastName' },
         { text: 'Email', dataIndex: 'email' },
         { text: 'Phone', dataIndex: 'phone' }
-    ]
+    ],
 
-//Ext.form.Panel
+    //store: Ext.data.StoreManager.lookup('personstore')
+
+    bind: {
+        //store: '{personlist}',
+        title: '{myTitle}'
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    //Ext.form.Panel
+    //defaultType: 'textfield',
 //    items: [
 //        {
 //            fieldLabel: 'First  Name',
