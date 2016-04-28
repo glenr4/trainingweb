@@ -1,17 +1,11 @@
-﻿Ext.define('TrainingWeb.store.PersonStore', {
+﻿Ext.define('TrainingWeb.store.Person', {
     extend: 'Ext.data.Store',
 
-    //requires: 'TrainingWeb.model.PersonGlobalModel',//
-
-    model: 'TrainingWeb.model.PersonGlobalModel',
-    //alias: 'store.personStore',
-    storeId: 'personstore',
-    //autoLoad: true,
+    model: 'TrainingWeb.model.Person',
+    storeId: 'person',
+  
     proxy: {
         type: 'memory',
-        //reader: {
-        //    type: 'json'
-        //}
     },
 
     data: [

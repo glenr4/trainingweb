@@ -1,7 +1,7 @@
-﻿Ext.define('TrainingWeb.view.person.PersonModel', {
+﻿Ext.define('TrainingWeb.view.editor.EditorModel', {
     extend: 'Ext.app.ViewModel',
 
-    alias: 'viewmodel.person',
+    alias: 'viewmodel.editor',
 
     data: {
         myTitle: 'Bound Title'

@@ -5,14 +5,16 @@
 
     init: function () {
         console.log("init");
-        //var store = Ext.data.StoreManager.lookup('personstore');
         //console.log(store);
 
         //var viewModel = this.getViewModel(),
         //    viewData = viewModel.get('personlist');
         //console.log(viewModel);
+    },
+
+    onRowClick: function ( cmpt, record, tr, rowIndex, e, eOpts ) {
+        console.log("onRowClick");
+        Ext.GlobalEvents.fireEvent('updateTabPanel', 'TrainingWeb.view.person.editor.Editor');
     }
-
-
 });
 

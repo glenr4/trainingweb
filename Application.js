@@ -9,7 +9,7 @@ Ext.define('TrainingWeb.Application', {
     name: 'TrainingWeb',
 
     stores: [
-        'TrainingWeb.store.PersonStore'
+        'TrainingWeb.store.Person'
     ],
     
     launch: function () {

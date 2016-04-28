@@ -1,4 +1,4 @@
-﻿Ext.define('TrainingWeb.model.PersonGlobalModel', {
+﻿Ext.define('TrainingWeb.model.Person', {
     extend: 'Ext.data.Model',
 
     fields: [

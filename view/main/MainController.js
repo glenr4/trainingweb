@@ -17,5 +17,27 @@ Ext.define('TrainingWeb.view.main.MainController', {
         if (choice === 'yes') {
             //
         }
+    },
+
+    init: function(){
+
+    },
+
+    listen: {
+        global: {
+            updateTabPanel: 'onUpdateTabPanel'
+        }
+    },
+
+    // Update the tab content
+    onUpdateTabPanel: function (viewName) {
+        console.log("onUpdateTabPanel actioned");
+        var mainTab = Ext.ComponentQuery.query('app-main');
+        if (mainTab) {
+            console.log(mainTab);
+            mainTab[0].update(viewName);    // This is not working currently
+        }
+        
+
     }
 });
