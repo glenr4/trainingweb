@@ -1,12 +1,18 @@
 ﻿Ext.define('TrainingWeb.view.person.PersonController', {
     extend: 'Ext.app.ViewController',
+<<<<<<< HEAD
     requires: [
        //  'TrainingWeb.view.person.editor.Editor'
     ],
+=======
+
+
+>>>>>>> f05d9b426a2396e136896eb62b36486239a325c4
     alias: 'controller.person',
 
     init: function () {
         console.log("init");
+<<<<<<< HEAD
         var store = Ext.data.StoreManager.lookup('personstore');
         console.log(store);
 
@@ -48,5 +54,14 @@
     }
 
 
+=======
+
+    },
+
+    onRowClick: function ( cmpt, record, tr, rowIndex, e, eOpts ) {
+        console.log("onRowClick");
+        Ext.GlobalEvents.fireEvent('updateTabPanel', 'TrainingWeb.view.person.editor.Editor');
+    }
+>>>>>>> f05d9b426a2396e136896eb62b36486239a325c4
 });
 

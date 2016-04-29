@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Ext.define('TrainingWeb.view.person.editor.EditorController', {
     extend: 'Ext.app.ViewController',
 
@@ -29,6 +30,23 @@
         // effectively 'shows' the new tab
         tabs[0].setActiveTab(newtab);
     }
+=======
+﻿Ext.define('TrainingWeb.view.editor.EditorController', {
+    extend: 'Ext.app.ViewController',
+
+    alias: 'controller.editor',
+
+    init: function () {
+        console.log("init");
+        //var store = Ext.data.StoreManager.lookup('Person');
+        //console.log(store);
+
+        //var viewModel = this.getViewModel(),
+        //    viewData = viewModel.get('personlist');
+        //console.log(viewModel);
+    }
+
+>>>>>>> f05d9b426a2396e136896eb62b36486239a325c4
 
 });
 

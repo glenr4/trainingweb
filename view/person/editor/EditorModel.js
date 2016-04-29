@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Ext.define('TrainingWeb.view.person.editor.EditorModel', {
     extend: 'Ext.app.ViewModel',
 
@@ -28,5 +29,15 @@
             
     //    }
     //}
+=======
+﻿Ext.define('TrainingWeb.view.editor.EditorModel', {
+    extend: 'Ext.app.ViewModel',
+
+    alias: 'viewmodel.editor',
+
+    data: {
+        myTitle: 'Bound Editor Title'
+    }
+>>>>>>> f05d9b426a2396e136896eb62b36486239a325c4
 });
 

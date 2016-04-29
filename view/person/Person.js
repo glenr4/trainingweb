@@ -1,6 +1,10 @@
 ﻿Ext.define('TrainingWeb.view.person.Person', {
     extend: 'Ext.grid.Panel',
     xtype: 'personview',
+<<<<<<< HEAD
+=======
+    itemId: 'personview',
+>>>>>>> f05d9b426a2396e136896eb62b36486239a325c4
 
     requires: [
         'TrainingWeb.view.person.PersonModel',
@@ -10,7 +14,12 @@
     controller: 'person',
     viewModel: 'person',
 
+<<<<<<< HEAD
     
+=======
+    store: 'person',
+
+>>>>>>> f05d9b426a2396e136896eb62b36486239a325c4
     columns: [
         { text: 'First Name', dataIndex: 'firstName' },
         { text: 'Last Name', dataIndex: 'lastName' },
@@ -18,6 +27,7 @@
         { text: 'Phone', dataIndex: 'phone' }
     ],
 
+<<<<<<< HEAD
    // Option 1 bind directly using this approach
    // store: 'personstore',
 
@@ -31,5 +41,14 @@
         rowdblclick: 'onRowClick'
     }
 
+=======
+    bind: {
+        title: '{myTitle}'
+    },
+
+    listeners: {
+        rowclick: 'onRowClick'
+    },
+>>>>>>> f05d9b426a2396e136896eb62b36486239a325c4
 });
 

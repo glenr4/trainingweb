@@ -3,6 +3,7 @@
 
     alias: 'viewmodel.person',
 
+<<<<<<< HEAD
     requires: ['TrainingWeb.model.Person'],
 
     data: {
@@ -27,6 +28,10 @@
             //}]
             
         }
+=======
+    data: {
+        myTitle: 'Bound Title'
+>>>>>>> f05d9b426a2396e136896eb62b36486239a325c4
     }
 });
 

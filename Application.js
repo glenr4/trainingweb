@@ -6,10 +6,15 @@
 Ext.define('TrainingWeb.Application', {
     extend: 'Ext.app.Application',
     
+<<<<<<< HEAD
     requires: [
         'TrainingWeb.Globals'
     ],
     // define the global stores here
+=======
+    name: 'TrainingWeb',
+
+>>>>>>> f05d9b426a2396e136896eb62b36486239a325c4
     stores: [
         'TrainingWeb.store.Person'
     ],
