@@ -6,8 +6,10 @@
 Ext.define('TrainingWeb.Application', {
     extend: 'Ext.app.Application',
     
-    name: 'TrainingWeb',
-
+    requires: [
+        'TrainingWeb.Globals'
+    ],
+    // define the global stores here
     stores: [
         'TrainingWeb.store.Person'
     ],
