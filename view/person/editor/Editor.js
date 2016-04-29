@@ -1,6 +1,9 @@
 ﻿Ext.define('TrainingWeb.view.person.editor.Editor', {
     extend: 'Ext.form.Panel',
+    itemId: 'editorview',
+    xtype: 'editorview',
 
+    title: 'Edit Person',
     defaultType: 'textfield',
     items: [
         {

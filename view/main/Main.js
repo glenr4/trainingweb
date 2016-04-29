@@ -79,6 +79,10 @@ Ext.define('TrainingWeb.view.main.Main', {
         personActiveView: 'personview'
     },
 
+    listeners: {
+        activate: 'onTabActivate'
+    },
+
     items: [
         {
         title: 'Home',
@@ -106,12 +110,16 @@ Ext.define('TrainingWeb.view.main.Main', {
                 html: '{loremIpsum}'
             }
         }, {
-            //TrainingWeb tab
-            // can the tab.Panel.update() method be used to update this tab on user click of a row?
-            title: 'Person Form',
-            items: [{
-                xtype: 'personview'
-            }]
+            title: 'Person Tab',
+            reference: 'persontab',
+            items: [
+                {
+                    xtype: 'editorview',
+                    hidden: true
+                },
+                {
+                    xtype: 'personview'
+                }]
         }
     ]
 });

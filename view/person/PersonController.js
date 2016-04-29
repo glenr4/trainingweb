@@ -1,15 +1,12 @@
 ﻿Ext.define('TrainingWeb.view.person.PersonController', {
     extend: 'Ext.app.ViewController',
 
+
     alias: 'controller.person',
 
     init: function () {
         console.log("init");
-        //console.log(store);
 
-        //var viewModel = this.getViewModel(),
-        //    viewData = viewModel.get('personlist');
-        //console.log(viewModel);
     },
 
     onRowClick: function ( cmpt, record, tr, rowIndex, e, eOpts ) {

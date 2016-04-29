@@ -1,6 +1,7 @@
 ﻿Ext.define('TrainingWeb.view.person.Person', {
     extend: 'Ext.grid.Panel',
     xtype: 'personview',
+    itemId: 'personview',
 
     requires: [
         'TrainingWeb.view.person.PersonModel',
@@ -26,19 +27,5 @@
     listeners: {
         rowclick: 'onRowClick'
     },
-
-    //Should this be in the PersonController? Why does it not execute from there?
-    //listeners: {
-    //    // When a row is clicked open the editor tab
-    //    rowclick: function () {
-    //        console.log("rowclick");
-    //        //controller.main.updateTab();
-    //        this.fireEvent('updateTabPanel', this.printLog("Event fired: updateTabPanel"));
-    //    }
-    //},
-
-    printLog: function (text) {
-        console.log(text);
-    }
 });
 

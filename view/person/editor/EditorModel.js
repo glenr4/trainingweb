@@ -4,7 +4,7 @@
     alias: 'viewmodel.editor',
 
     data: {
-        myTitle: 'Bound Title'
+        myTitle: 'Bound Editor Title'
     }
 });
 
